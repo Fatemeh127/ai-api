@@ -1,0 +1,12 @@
+openai
+python-dotenv
+pydantic
+pydantic-settings
+fastapi
+uvicorn
+sqlalchemy
+pytest
+pytest-asyncio
+httpx
+psycopg2-binary
+alembic
