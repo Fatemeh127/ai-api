@@ -31,7 +31,7 @@ class Settings(BaseSettings):
     openai_api_key : str
     model_name : str = "gpt-3.5-turbo"
     max_tokens : int = Field(default=1000,gt=1, lt=4000)
-    database_url : str = "postgresql://postgres:postgres@db:5432/chatdb"
+    database_url : str 
 
     class Config:
         env_file = ".env"

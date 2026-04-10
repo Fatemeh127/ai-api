@@ -4,8 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from config import settings
 
 Base = declarative_base()
-#engine = create_engine("sqlite:///chat.db", connect_args={"check_same_thread": False})  # use sqlite
-engine = create_engine(settings.database_url)  #use postgresql
+engine = create_engine(settings.database_url)  
 
 
 class ChatHistory(Base):
